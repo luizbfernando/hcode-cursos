@@ -8,13 +8,16 @@ git push = Envia uma versão do seu código para uma nuvem remota. Precisa ter u
 
 git reflog = Mostra as versões que foram feitas (As mais recentes ficam no topo);
 
-git reset --hard <seu-codigo-reflog> = Retorna a versão do código atrelada ao código reflog específicado. Muito útil para navegar entre versões do seu código, caso cometa algum erro, por exemplo;
+git reset --hard <seu-codigo-reflog> = Retorna para a versão do código atrelada ao código reflog específicado. Muito útil para navegar entre versões do seu código, caso cometa algum erro, por exemplo;
 
 git branch = Mostra as branchs disponíveis ;
 
 git branch <nome-branch> = Cria uma nova branch;
 
-git checkout <nome-branch> = Muda para a branch especificada.
+git checkout <nome-branch> = Muda para a branch especificada;
 
-git merge <branch para mergiar com a atual> = Envia/une o conteúdo de uma branch com outra branch.  
+git merge <branch alterada> = Envia/une o conteúdo de uma branch com outra branch;
+
+git pull = Traz as atualizações do servidor remoto para a sua máquina local(sempre faça-o antes de fazer um git merge);
+
 
