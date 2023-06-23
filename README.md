@@ -3,7 +3,8 @@
 
 >Em desenvolvimento
 
+Instale a extensão live server ao seu vs code e utilize-a.
 
 ```
-Install and run the live server extention in your vscode after download the zip.
+https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer
 ```
