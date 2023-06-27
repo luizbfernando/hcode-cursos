@@ -6,6 +6,29 @@
     <title>Tag: td</title>
 </head>
 <body>
+    <style>
+        table {
+            width: 100%;
+            font-family: Arial, Helvetica, sans-serif;
+            border-collapse: collapse;   
+        }
+        tbody lr:nth-of-type(odd) /* Linha sim, linha não */{
+            background-color: gray;
+        }
+        td,th {
+            padding: 1em;
+        }
+        td.real {
+            text-align: right;
+        }
+        td.real::before {
+            content: 'R$';
+        }
+        tfoot tr{
+            background-color: #333;
+            color: white;
+        }
+    </style>
      <!-- 
         Tag usada para definir uma célula dentro de uma tabela.
         Deve sempre ser usada dentro da tag 'tr'.
