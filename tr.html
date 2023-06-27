@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tag: tr</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tag: tablee</title>
+    <style>
+        table {
+            width: 100%;
+            font-family: Arial, Helvetica, sans-serif;
+            border-collapse: collapse;   
+        }
+        tbody lr:nth-of-type(odd) /* Linha sim, linha não */{
+            background-color: gray;
+        }
+        td,th {
+            padding: 1em;
+        }
+        td.real {
+            text-align: right;
+        }
+        td.real::before {
+            content: 'R$';
+        }
+        tfoot tr{
+            background-color: #333;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        Tag usada para definir uma linha em uma tabela.
+        Esta tag deve conter uma ou mais tags 'th' e 'td'
+    -->
+     <table>
+        <tr>
+            <td>
+                A1
+            </td>
+            <td>
+                B1
+            </td>
+            <td>
+                C1
+            </td>
+        </tr>
+            <td>
+                A2
+            </td>
+            <td>
+                B2
+            </td>
+                
+            <td>
+                C2
+            </td>
+        </tr>
+     </table>
+</body>
+</html>
+</body>
+</html>
