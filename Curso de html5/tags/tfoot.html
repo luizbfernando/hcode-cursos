@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tag: foot</title>
+    <style>
+        table {
+            width: 100%;
+            font-family: Arial, Helvetica, sans-serif;
+            border-collapse: collapse;   
+        }
+        tbody lr:nth-of-type(odd) /* Linha sim, linha não */{
+            background-color: gray;
+        }
+        td,th {
+            padding: 1em;
+        }
+        td.real {
+            text-align: right;
+        }
+        td.real::before {
+            content: 'R$';
+        }
+        tfoot tr{
+            background-color: #333;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        Usada para definir um cabeçalho na sua tabela.
+        Deve vir depois das tags 'thead' e "tbody";
+        Navegadores podem usar esta opção para ativar a rolagem de tela na sua tabela;
+        Deve ser obrigatoóriamente filha de uma tag table;
+        Deve ter uma ou mais 'tr's dentro dela;
+        Não afeta visualmente a tabela, mas pode ser estilizada com css
+        CSS PADRÃO:
+         tfoot {
+            display: table-row-group;
+            vertical-align: meddle;
+            Border color: inherit;
+         }
+     -->
+     <table>
+        <THEad>
+            <tr>
+                <th>Header 1</th>
+                <th>Header 2</th>
+                <th>Header 3</th>
+            </tr>
+        </THEad>
+        <tbody>
+            <tr>
+                <td>A1</td>
+                <td>B1</td>
+                <td>C1</td>
+            </tr>
+                <td>A2</td>
+                <td>B2</td>     
+                <td>C2</td>
+            </tr>   
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>Footer 1</td>
+                <td>Footer 2</td>
+                <td>Footer 3</td>
+            </tr>
+        </tfoot>
+     </table>
+</body>
+</html>
