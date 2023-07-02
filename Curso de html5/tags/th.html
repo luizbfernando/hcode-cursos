@@ -1,37 +1,14 @@
 <!DOCTYPE html>
 <html lang="pt">
 <head>
+    <link rel="stylesheet" href="/Curso de html5/tags/css/table.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tag: th</title>
-    <style>
-        table {
-            width: 100%;
-            font-family: Arial, Helvetica, sans-serif;
-            border-collapse: collapse;   
-        }
-        tbody lr:nth-of-type(odd) /* Linha sim, linha não */{
-            background-color: gray;
-        }
-        td,th {
-            padding: 1em;
-        }
-        td.real {
-            text-align: right;
-        }
-        td.real::before {
-            content: 'R$';
-        }
-        tfoot tr{
-            background-color: #333;
-            color: white;
-        }
-    </style>
 </head>
 <body>
-
     <!-- 
-        Tag usada para fazer uma célula na sua tabela;
+        Tag usada para fazer uma célula no cabeçalho da sua tabela;
         Deve sempre estar dentro de uma tag 'tr'
          tfoot {
             display: table-cell;
