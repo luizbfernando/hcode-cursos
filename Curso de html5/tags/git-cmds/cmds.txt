@@ -2,6 +2,8 @@ git remote rm "seu-link" = Apaga uma url já existente;
 
 Git add "exemplo-arquvio.txt" = adiciona um arquivo ao seu controle de versão (git add . para adicionar todos de uma vez só);
 
+git clone "url/exemplo" = clona os arquivos do servidor para a sua máquina;
+
 git status = Mosta as mudanças que foram realizadas e/ou o que precisa ser adicionadas ao controle de versão;
 
 Git commit -m "Exemplo cmd" = Cria uma versão do seu código para ser enviada, uma boa prática é descrever o que foi feito na mensagem (nas aspas duplas);
