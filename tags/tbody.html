@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tag: tbody</title>
+    <style>
+        table {
+            width: 100%;
+            font-family: Arial, Helvetica, sans-serif;
+            border-collapse: collapse;   
+        }
+        tbody lr:nth-of-type(odd) /* Linha sim, linha não */{
+            background-color: gray;
+        }
+        td,th {
+            padding: 1em;
+        }
+        td.real {
+            text-align: right;
+        }
+        td.real::before {
+            content: 'R$';
+        }
+        tfoot tr{
+            background-color: #333;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        Tag usada para agrupar o corpo da  tabela;
+        A tag é usada em conjunto com as tags 'thead' e 'tfoot';
+        Os navegadores podem usar esta definicão para ativar a rolagem do corpo da tabela;
+        Deve ser filha da tag'table';
+        Deve vir antes da  tag thead e antes da tfoot;
+        Não afeta a tabela visualmente mas pode ser estilizada com css;
+        Ajuda os navegadores a criar uma área de scroll.
+        CSS PADRÃO:
+         table {
+            display: table-row-group;
+            vertical-align: meddle;
+            Border color: inherit;
+         }
+     -->
+     <table>
+        <THEad>
+            <tr>
+                <th>Header 1</th>
+                <th>Header 2</th>
+                <th>Header 3</th>
+            </tr>
+        </THEad>
+        <tbody>
+            <tr>
+                <td>
+                    A1
+                </td>
+                <td>
+                    B1
+                </td>
+                <td>
+                    C1
+                </td>
+            </tr>
+                <td>
+                    A2
+                </td>
+                <td>
+                    B2
+                </td>
+                    
+                <td>
+                    C2
+                </td>
+            </tr>
+        </tbody>
+       
+     </table>
+</body>
+</html>
