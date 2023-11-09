@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tag: bdo</title>
+    <title>Tag: blockquote</title>
 
     <style>
 
@@ -34,18 +34,21 @@
 <body>
 
  <header>
-    <p class="title"> A tag 'bdo' é usada para definir a direção de um texto </p>
-    <p>Essa tag substituí a direção do texto atual e deve obrigatóriamente ter o atributo 'dir'</p>
-    
+    <p class="title"> A tag 'bdo' é usada para definir uma citação externa </p>
+    <p>Para citações curtas use a tag 'q'</p>
      <code>
         <strong>
              Css padrão: <br>
-                 bdo { <br>
-                    unicode-bdi: bdi-override;
+                 blockquote { <br>
+                    display: block;
+                    margin-top: 1em;
+                    margin-bottom: 1em;
+                    margin-left: 40px;
+                    margin-right: 40px;
                 }
              
              
-             <br>Aceita todas tags globais (Uso obrigatório do atributo global DIR)
+             <br>Aceita todas tags globais (Uso obrigatório do atributo 'cite')
         </strong>
      </code>
 
@@ -55,14 +58,17 @@
  <main>
     <h1>
         Teste
-    </h1>
+    </h1> 
 
-    <bdo dir="rtl">
+        <blockquote cite="https://pt.wikipedia.org/wiki/Lorem_ipsum">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate, iure sapiente nisi beatae dignissimos deserunt commodi odit quibusdam enim consequuntur fuga autem.
+             Illum ex eos consequatur quae, quisquam impedit! Laborum!
+        </blockquote>
+
         <p>
             Lorem ipsum, dolor sit amet consectetur adipisicing elit Illo culpa provident dolores aspernatur quasi consequatur pariatur libero, illum doloribus,
             quis quos eligendi deserunt maiores quae distinctio non assumenda est repellat!
         </p>
-    </bdo>
 
  </main>
    
