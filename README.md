@@ -1,6 +1,6 @@
 # hcode-cursos
 
->Aqui, você  pode revisar quaisquer conteúdos sobre html que pode ser úteis.
+>Aqui, você  pode revisar quaisquer conteúdos sobre html que podem ser úteis.
 >
 >Recomendo que você baixe o arquivo zip descompacte-o e use a extensão live server no seu vscode
 
