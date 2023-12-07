@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <link rel="stylesheet" href="/Curso de html5/tags/css/table.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tag: colgroup</title>
+</head>
+<body>
+    <!--   
+        Tag usada para definir propiedades nas colunas;
+        CSS PADRÃO: 
+        colgroup {
+            display: table-column-group;
+        }
+     -->
+     <table>
+        <colgroup span="2" style="background-color: green;">
+
+        </colgroup>
+        <thead>
+            <tr>
+                <th>A</th>
+                <th>B</th>
+                <th>C</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>A1</td>
+                <td>B1</td>
+                <td>C1</td>
+            </tr>
+            <tr>
+                <td>A2</td>
+                <td>B2</td>
+                <td>C2</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <td colspan="3">Footer</td>
+        </tfoot>
+     </table>
+</body>
+</html>

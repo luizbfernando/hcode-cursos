@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <link rel="stylesheet" href="/Curso de html5/tags/css/table.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tag: th</title>
+</head>
+<body>
+    <!-- 
+        Tag usada para fazer uma célula no cabeçalho da sua tabela;
+        Deve sempre estar dentro de uma tag 'tr'
+         tfoot {
+            display: table-cell;
+            vertical-align: inherit;
+            text-align: center;
+            font-weight: bold;
+         }
+     -->
+     <table>
+        <THEad>
+            <tr>
+                <th sorted="reversed">Header1</th>
+                <th abbr="Jan">Janeiro</th>
+                <th>Header3</th>
+            </tr>
+        </THEad>
+        <tbody>
+            <tr>
+                <td colspan="2">A1</td>
+                <td>C1</td>
+            </tr>
+            <tr>
+                <td>A2</td>
+                <td rowspan="2">B2</td>     
+                <td>C2</td>
+            </tr>   
+            <tr>
+                <td>A3</td>     
+                <td>C3</td>
+            </tr>   
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>Footer1</td>
+                <td>Footer2</td>
+                <td>Footer3</td>
+            </tr>
+        </tfoot>
+     </table>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+        header, footer {
+            height: 10vh;
+            background-color: ccc;
+        }
+        section {
+            display: flex;
+            flex-direction: row;
+        }
+        main {
+            height: 80vh;
+            background-color: #999;
+            flex: 1;
+        }
+
+        aside {
+            height: 80vh;
+            background-color: gold;
+            width: 10vh;
+        }
+</style>
+
+<body>
+    <!-- 
+        Tag defini um conjunto de links para navegação;
+        Não há nescessidade de colocar todos os links da sua página em uma tag nav, ela serve como um contâiner para VÁRIOS links.
+     -->
+    <header>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Contatos</a>
+            <a href="#">About</a>
+        </nav>
+    </header>
+
+    <section>
+        <main>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#">Categoria</a>
+                        <a href="#">Contatos</a>
+                        <a href="#">Loja virtual</a>
+                    </li>
+                </ul>
+            </nav>
+        </main>
+
+        <aside>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium error voluptates totam, impedit
+                perferendis ipsam voluptatibus voluptatem at voluptas, consequatur sapiente soluta minus nihil, fugit
+                quia cumque vero fugiat asperiores!</p>
+        </aside>
+
+        <footer>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#">Politica de privaciadade</a>
+                        <a href="#">Todos os direitos reservados</a>
+                        <a href="#">Loja virtual</a>
+                    </li>
+                </ul>
+            </nav>
+        </footer>
+    </section>
+
+</body>
+
+</html>
