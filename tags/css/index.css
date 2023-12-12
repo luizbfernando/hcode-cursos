@@ -1,0 +1,62 @@
+body {
+    background-color: #040404;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+.principal {
+    background-color: #d5d5d5;
+    text-align: center;
+    padding: 3px;
+    border-radius: 5px;
+}
+
+.principal-css {
+    background-color: #d5d5d5;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 18px;
+    padding: 10px;
+}
+
+.principal-teste {
+    background-color: #d5d5d5;
+    padding-top:0;
+}
+
+h1 {
+    color: #272727;
+    margin: 0;
+}
+
+h2 {
+    color: #343434;
+    text-align: center;
+    margin: 0;
+
+}
+
+h3 {
+    color: #272727;
+    text-align: center;
+    margin: 0;
+
+}
+
+h4 {
+    color: #272727;
+    text-align: center;
+    margin: 0;
+    font-size: 2em;
+}
+
+hr {
+    margin: 0;
+    
+}
+
+p {
+    text-align: center;
+    padding: 3px;
+}
