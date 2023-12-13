@@ -57,7 +57,13 @@ hr {
     
 }
 
+small {
+    text-align: center;
+    padding: 3px;
+}
+
 p {
     text-align: center;
     padding: 3px;
 }
+
