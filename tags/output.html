@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/tags/css/index.css">
+    <title>Tag: output</title>
+</head>
+
+<body>
+
+    <header>
+
+        <div class="principal">
+            <h1> A tag 'output' define uma resultado de um cálculo</h1>
+            <h3> Pssui css padrão e aceita todos os atributos globais </h3>
+        </div>
+
+    </header>
+
+    <hr>
+
+    <main>
+
+        <div class="principal-css">
+            <code>
+            <strong>
+                output { 
+                   <br>display: inline; <br>
+                } 
+            </strong>
+         </code>
+        </div>
+        
+        <hr>
+
+        <div class="principal-teste">
+            <h4>
+                Testando a tag 'output'
+            </h4>
+
+            <form oninput="c.value = parseInt(a.value) + parseInt(b.value)">
+
+                <input type="range" id="a" value="0" min="0" max="10">
+                +
+                <input type="number" name="" id="b" value="0">
+                =
+                <output name="c" for="a b">0</output>
+
+            </form>
+
+        </div>
+
+    </main>
+
+</body>
+
+</html>
