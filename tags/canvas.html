@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/tags/css/index.css">
+    <title>Tag: canvas</title>
+</head>
+
+<body>
+
+    <header>
+
+        <div class="principal">
+            <h1> A tag 'canvas' define um quadro de desenho gráfico 2D ou 3D</h1>
+            <h2> Para desenhar é nescessário javascript</h2>
+            <h3>Possui css padrão e aceita todos os atributos globais </h3>
+        </div>
+
+    </header>
+
+    <hr>
+
+    <main>
+
+        <div class="principal-css">
+            <code>
+            <strong>
+                canvas { 
+                   <br>height: 150px; <br>
+                   <br>width: 300px; <br>
+                } 
+            </strong>
+         </code>
+        </div>
+
+        <hr>
+
+        <div class="principal-teste">
+            <h4>
+                Testando a tag 'canvas'
+            </h4>
+
+            <canvas id="quadro">
+
+            </canvas>
+
+        </div>
+
+    </main>
+
+    <script>
+        const quadro = document.querySelector('#quadro');
+        const contexto = quadro.getContext('2d');
+
+        contexto.fillStyle = "#ff0000";
+        contexto.fillRect(0, 0, 100, 100);
+    </script>
+
+</body>
+
+</html>
