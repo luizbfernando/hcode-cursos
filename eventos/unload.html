@@ -6,16 +6,16 @@ o
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/tags/css/index.css">
-    <title> Evento: resize</title>
+    <title> Evento: unload</title>
 </head>
 
-<body onresize="debug(event)">
+<body onunload=" return debug(event)">
 
 
     <header>
 
         <div class="principal">
-            <h1> </h1>
+            <h1> Acontece toda vez que a página é descarregada</h1>
         </div>
 
     </header>
@@ -23,7 +23,7 @@ o
     <script>
         function debug(e) {
             console.log()
-            alert('Evento ' + e.type);
+            return('Evento ' + e.type);
         }
     </script>
 
