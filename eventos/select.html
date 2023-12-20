@@ -1,0 +1,45 @@
+o
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/tags/css/index.css">
+    <title> Evento: select</title>
+</head>
+
+<body >
+
+
+    <header>
+
+
+        <div class="principal">
+            <h1> Acontece toda vez que um texto é selecionado</h1>
+        </div>
+
+    </header>
+
+    <main>
+
+        
+        <div class="principal-teste">
+            <form action="" >
+                <input type="search" onselect="debug(event)">
+                <button type="" >Resetar</button>
+            </form>
+            
+        </div>
+    </main>
+
+    <script>
+        function debug(e) {
+            console.log()
+            alert('Evento ' + e.type);
+        }
+    </script>
+
+</body>
+
+</html>
