@@ -1,0 +1,43 @@
+o
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/tags/css/index.css">
+    <title> Evento: mouseout</title>
+</head>
+
+<body>
+
+
+    <header>
+
+
+        <div class="principal">
+            <h1> Acontece toda vez que o mouse sai de um lugar</h1>
+        </div>
+
+    </header>
+
+    <main>
+
+        
+        <div class="principal-teste" onmouseout="debug(event)" >
+          
+            <button type="button" onmousedown="debug(event)">Click</button>
+            
+        </div>
+    </main>
+
+    <script>
+        function debug(e) {
+            console.log()
+            alert('Evento ' + e.type);
+        }
+    </script>
+
+</body>
+
+</html>
