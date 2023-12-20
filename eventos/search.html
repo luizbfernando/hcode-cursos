@@ -6,7 +6,7 @@ o
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/tags/css/index.css">
-    <title> Evento: reset</title>
+    <title> Evento: search</title>
 </head>
 
 <body >
@@ -16,7 +16,7 @@ o
 
 
         <div class="principal">
-            <h1> Acontece toda vez que um campo é limpado</h1>
+            <h1> Acontece toda vez que uma pesquisa é feita</h1>
         </div>
 
     </header>
@@ -25,8 +25,8 @@ o
 
         
         <div class="principal-teste">
-            <form action="" onreset="debug(event)">
-                <input type="text" >
+            <form action="" >
+                <input type="search" onsearch="debug(event)">
                 <button type="reset" >Resetar</button>
             </form>
             
