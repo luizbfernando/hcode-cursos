@@ -1,0 +1,53 @@
+o
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/tags/css/index.css">
+    <title> Evento: toggle</title>
+</head>
+
+<body>
+
+
+    <header>
+
+
+        <div class="principal">
+            <h1> Acontece toda vez que um conteúdo escondido pela tag 'details' é mostrado</h1>
+        </div>
+
+    </header>
+
+    <main>
+
+        <div class="principal-teste">
+            <details ontoggle="debug(event)">
+                <Summary>hcode</Summary>
+                <p>
+                    Lorem ipsum dolor sit amet consectet
+                    ur adipisicing elit. Modi laboriosam
+                     aut libero blanditiis officia iusto 
+                     consequuntur vel cupiditate numquam
+                      debitis beatae architecto eveniet 
+                      natus illum eligendi, reiciendis 
+                      corporis maiores quidem!
+    
+                </p>
+            </details>
+        </div>
+
+    </main>
+
+    <script>
+        function debug(e) {
+            console.log()
+            alert('Evento ' + e.type);
+        }
+    </script>
+
+</body>
+
+</html>
