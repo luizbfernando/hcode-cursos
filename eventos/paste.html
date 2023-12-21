@@ -1,0 +1,44 @@
+o
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/tags/css/index.css">
+    <title> Evento: paste</title>
+</head>
+
+<body>
+
+
+    <header>
+
+
+        <div class="principal">
+            <h1> Acontece toda vez que um você copia algo com o comando ctrl + c </h1>
+        </div>
+
+    </header>
+
+    <main>
+
+
+        <div class="principal-teste">
+            <p onpaste="debug(event)">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae delectus optio omnis inventore sunt
+                sed fugiat laudantium, tempora ratione quasi quo porro ipsa perferendis quas modi est itaque aut odio.
+            </p>
+        </div>
+    </main>
+
+    <script>
+        function debug(e) {
+            console.log()
+            alert('Evento ' + e.type);
+        }
+    </script>
+
+</body>
+
+</html>
