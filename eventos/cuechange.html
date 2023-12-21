@@ -1,0 +1,45 @@
+o
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/tags/css/index.css">
+    <title> Evento: durationchange </title>
+</head>
+
+<body>
+
+
+    <header>
+
+
+        <div class="principal">
+            <h1> Acontece toda vez o texto de uma trilha do arquivo de mídia é alterado</h1>
+        </div>
+
+    </header>
+
+    <main>
+
+
+        <div class="principal-teste">
+
+            <video src="/tags/documents/scott joplon film pvp.mp4" oncuechange="debug(event)" controls>
+                <track src="/tags/documents/AV1_trailer_pt.vtt" label="Português" kind="subtitles">
+            </video>
+
+        </div>
+    </main>
+
+    <script>
+        function debug(e) {
+            console.log()
+            alert('Evento ' + e.type);
+        }
+    </script>
+
+</body>
+
+</html>
