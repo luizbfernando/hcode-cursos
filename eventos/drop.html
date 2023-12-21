@@ -1,4 +1,4 @@
-o
+go
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -6,37 +6,36 @@ o
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/tags/css/index.css">
-    <title> Evento: drop </title>
+    <title> Evento: drop</title>
 </head>
 
-<body onscroll="debug(event)">
+<body>
 
 
     <header>
-
-
-        <div class="principal">
-            <h1> Acontece toda vez que o scroll da página é utilizado</h1>
+        <div class="principal" draggable="true">
+            <h1>Acontece toda vez que algo é jogado </h1>
         </div>
-
     </header>
 
     <main>
-
-        
-        <div class="principal-teste" >
-            <form action="" >
-                <input type="number" >
-                <button type="submit">Enviar</button>
-            </form>
-            
+        <div class="principal-teste" ondrop="cancel(event)" ondrop="debug(event)">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae dignissimos deserunt temporibus quam, quod
+                omnis voluptate fugiat earum provident eius ipsam cupiditate ipsa atque dolores officia suscipit?
+                Cumque, quae ipsa!</p>
         </div>
     </main>
 
+
     <script>
+        function cancel(e ) {
+            e.PreventDefault();f
+        };
+
         function debug(e) {
             console.log()
             alert('Evento ' + e.type);
+
         }
     </script>
 
