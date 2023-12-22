@@ -1,17 +1,17 @@
+function calculaTabuada() {
 
+    let tabuada = document.querySelector("#tabuada tbody");
 
-let tabuada = document.querySelector("#tabuada tbody");
+    let valorA = parseInt(document.querySelector("#valorA").value);
 
-let valorA = 99;
+    tabuada.innerHTML = '';
 
-tabuada.innerHTML = ''; 
+    for (let valorB = 0; valorB <= 10; valorB++) {
 
-for (let valorB = 0; valorB <= 10; valorB++) {
+        let resultado = valorA * valorB;
 
-    let resultado = valorA * valorB;
-
-    let template =
-        `
+        let template =
+            `
             <td>${valorA}</td>
             <td>x</td>
             <td>${valorB}</td>
@@ -20,10 +20,16 @@ for (let valorB = 0; valorB <= 10; valorB++) {
         
             `;
 
-    let tr = document.createElement('tr');
+        let tr = document.createElement('tr');
 
-    tr.innerHTML = template;
+        tr.innerHTML = template;
 
-    tabuada.append(tr);
+        tabuada.append(tr);
+
+    }
 
 }
+
+calculaTabuada();
+
+document.querySelector("#valorA").addEventListener('change', calculaTabuada );

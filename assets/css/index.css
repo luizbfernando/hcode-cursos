@@ -124,3 +124,8 @@ footer {
 .content-tabuada tbody tr:hover {
     background-color: rgba(0,0,0,.15);
 }
+
+#valorA {
+    width: 100%;
+    padding: 10px;
+}
