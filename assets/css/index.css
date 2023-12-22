@@ -1,11 +1,17 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     background-color: #f2f2f2;
+
 }
 
 .content-center {
     width: 100%;
     max-width: 300px;
     margin: auto;
+    padding: 20px;
 }
 
 .content-center img {
@@ -14,4 +20,14 @@ body {
 
 .content-center .text-center {
     text-align: center;
+}
+
+.content-center form {
+    margin: 20px;
+}
+
+.content-center input,
+.content-center button {
+     width: 100%;
+     padding: 10px 5px;
 }
