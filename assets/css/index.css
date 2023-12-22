@@ -107,4 +107,20 @@ footer {
 
 .content-tabuada td {
     padding: 10px;
+    border-top: 1px solid #DEE2E6;
+    padding: .75rem;
+}
+
+.content-tabuada table {
+    width: 100%;
+    border-collapse: collapse;
+  
+}
+
+.content-tabuada tbody tr:nth-child(odd) {
+    background-color: rgba(0,0,0,.05);
+}
+
+.content-tabuada tbody tr:hover {
+    background-color: rgba(0,0,0,.15);
 }
