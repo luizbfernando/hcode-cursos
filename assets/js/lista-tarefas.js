@@ -27,10 +27,18 @@ data.forEach(task => {
         if (e.target.checked) {
             li.classList.add('complete');
         } else {
-            li.classList.add('remove')
+            li.classList.add('remove');
         }
 
     });
 
     document.querySelector('.todo').append(li);
 });
+
+document.querySelector('#new-task').addEventListener('keyup', e => {
+
+    if(e.key === 'Enter') {
+        
+    }
+
+})
