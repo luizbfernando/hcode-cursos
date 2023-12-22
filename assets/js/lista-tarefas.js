@@ -11,6 +11,7 @@ function renderTodo() {
     
     <input type="checkbox" id="task-${task.id}">
     <label for="task-${task.id}">${task.title}</label>
+    <button type="button" class="todo-button">x</button>
     
     `;
 
@@ -22,6 +23,10 @@ function renderTodo() {
                 li.classList.add('complete');
             }
 
+        });
+
+        li.querySelector('button').addEventListener('click', e => {
+            console.warn("Você vai deletar esse item?")
         });
 
         document.querySelector('.todo').append(li);
