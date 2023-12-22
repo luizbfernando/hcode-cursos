@@ -5,8 +5,8 @@ email = "glaucio@hcode.com.br"
 console.log("O seu email é: " + email);
 console.log(`O seu email é:  ${email}`);
 
-document.querySelector('#form-login').addEventListener('mouseleave', e => {
-    console.log('O mouse está fora do formulário!');
+document.querySelector('#form-login').addEventListener('submit', e => {
+    console.log('Formulário enviado!');
 });
 
 document.querySelector('#form-login').addEventListener('submit', e => {
@@ -21,15 +21,13 @@ document.querySelector('#form-login').addEventListener('submit', e => {
         
     }
 
-    console.log(json);
+    if(!json.email) {
 
-    let stringJSON = JSON.stringify(json);
+        console.error("O campo e-mail deve ser preenchido");
 
-    console.log(stringJSON);
-
-    let jsonParse = JSON.parse(stringJSON);
-
-    console.log (jsonParse.password);
+    } else if (!json.password) {
+        console.error("A senha deve ser preenchida");
+    }
 
 
 })
