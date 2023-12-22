@@ -22,5 +22,15 @@ data.forEach(task => {
     
     `;
 
+    li.querySelector('input').addEventListener("change", e => {
+
+        if (e.target.checked) {
+            li.classList.add('complete');
+        } else {
+            li.classList.add('remove')
+        }
+
+    });
+
     document.querySelector('.todo').append(li);
 });
