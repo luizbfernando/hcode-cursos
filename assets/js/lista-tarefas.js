@@ -33,10 +33,15 @@ function renderTodo() {
             let id = input.id;
             let idArray = id.split('-');
             let todoId = idArray[1];
+            let title = li.querySelector('label').innerText;
 
-            data = data.filter(task => task.id !== parseInt(todoId));
+            if (confirm(`Deseja realmente excluír a tarefa ${title}?`)) {
 
-            renderTodo();
+                data = data.filter(task => task.id !== parseInt(todoId));
+
+                renderTodo();
+
+            };
 
         });
 
