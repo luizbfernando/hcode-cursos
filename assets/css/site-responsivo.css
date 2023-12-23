@@ -1,0 +1,17 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+body {
+    margin: 0;
+}
+
+header {
+    min-height: 500px;
+    background-image: url("../img/6_1082_header.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+}
