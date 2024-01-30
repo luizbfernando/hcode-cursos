@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/tags.css">
+    <title>Border-image-width</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .bloco {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .item {
+            width: 500px;
+            height: 500px;
+            background-color: #fdc571;
+            border: 1px solid #fdc571 ;
+            border-image-source: url(/assets/images/border-image-source.png);
+            border-image-width: 50px;
+            border-image-slice: 30%;
+            border-image-outset: 50px;
+            border-image-repeat: round;
+            
+        }
+
+        strong {
+            padding-right: 3px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+
+        <section class="principal">
+            <h1>
+                Propiedade <border-image-slice></border-image-slice>
+            </h1>
+            <p>
+                Esta propiedade css defina o tamanho da imagem da borda que será usado.
+            </p>
+
+        </section>
+
+    </header>
+
+    <hr>
+
+    <main>
+
+        <section class="principal-css">
+            <h2>Valores</h2>
+            <p><strong>Valores possíveis:</strong>number, %, fill, initial, inherit</p>
+            <p><strong>Valor Padrão:</strong>100%</p>
+            <p><strong>Valor Herdado:</strong>não</p>
+        </section>
+
+        <hr>
+
+        <section class="principal-teste">
+            <div class="bloco">
+                <div class="item">
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+</body>
+
+</html>
