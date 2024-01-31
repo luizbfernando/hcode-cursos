@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/tags.css">
+    <title>Border-collapse</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        strong {
+            padding-right: 3px;
+        }
+
+        .bloco {
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+        table {
+            border: solid 1px #333;
+            width: 70vw;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: solid 1px #333;
+            text-align: center;
+
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+
+        <section class="principal">
+            <h1>
+                Propiedade border-image
+            </h1>
+            <p>
+                Define se as bordas de uma tabela devem ser mescladas em uma
+                única, ou se devem se manter separadas.
+            </p>
+        </section>
+
+    </header>
+
+    <hr>
+
+    <main>
+
+        <section class="principal-css">
+            <h2>Valores</h2>
+            <p><strong>Valores possíveis:</strong>collapse, separate, unset, initial, inherit</p>
+            <p><strong>Valor Padrão:</strong>Separate</p>
+            <p><strong>Valor Herdado:</strong>não</p>
+        </section>
+
+        <hr>
+
+        <section class="principal-teste">
+            <div class="bloco">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>nome</th>
+                            <th>E-mail</th>
+                            <th>Telefone</th>
+                            <th>Cargo</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>Anthony Rafael</td>
+                            <td>Suporte@hcode.dev</td>
+                            <td>28023032</td>
+                            <td>Sr. Developer</td>
+                        </tr>
+                    </tbody>
+
+                </table>
+
+            </div>
+        </section>
+
+    </main>
+
+</body>
+
+</html>
