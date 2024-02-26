@@ -1,3 +1,17 @@
 .principal-teste {
     max-width: 16vw;
 }
+
+.container {
+    width: 300px;
+    display: flex;
+    height: auto;
+    overflow-x: auto;
+
+}
+
+.item {
+    padding: 50px;
+    margin-right: 20px;
+    border: #ff760c 5px outset;
+}
