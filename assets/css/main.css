@@ -6,7 +6,9 @@
     width: 300px;
     display: flex;
     height: auto;
-    overflow-x: auto;
+    overflow-y: auto;
+    flex-direction: column;
+    height: 200px;
 
 }
 
