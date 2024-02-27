@@ -2,18 +2,3 @@
     max-width: 16vw;
 }
 
-.container {
-    width: 300px;
-    display: flex;
-    height: auto;
-    overflow: auto;
-    flex-direction: column;
-    height: 200px;
-
-}
-
-.item {
-    padding: 50px;
-    margin-right: 20px;
-    border: #ff760c 5px outset;
-}

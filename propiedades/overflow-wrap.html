@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/index.css">
+    <title>overflow-wrap</title>
+</head>
+<style>
+    .container {
+        width: min-content;
+        overflow-wrap: break-word;
+        border: #000 5px solid;
+        max-width: 150px;
+
+    }
+
+    .item {
+        padding: 50px;
+        margin-right: 20px;
+        border: #ff760c 5px outset;
+    }
+</style>
+
+<body>
+
+    <main>
+
+        <section class="principal">
+            <h1>
+                Propriedade overflow-wrap
+            </h1>
+            <p>
+                Esta propriedade css é aplicada a elementos de linha,
+                adicionando uma quebra de linha sempre que uma palavra
+                for gerar um estouro na caixa
+            </p>
+
+        </section>
+
+        <section class="principal-css">
+            <h2>Valores</h2>
+            <p><strong>Valores possíveis:</strong>normal, break-word, anywhere, initial, inherit, unset</p>
+            <p><strong>Valor Padrão:</strong>normal</p>
+            <p><strong>Valor Herdado:</strong>Sim</p>
+        </section>
+
+
+        <section class="principal-teste">
+            <div class="container">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod cum beatae deserunt dicta provident delenitialiquam praesentiumdoloremque in ullam iste dolore eum quaerat ea odio, omnis exercitationem, at repellat?</p>
+            </div>
+        </section>
+
+    </main>
+
+</body>
+
+</html>

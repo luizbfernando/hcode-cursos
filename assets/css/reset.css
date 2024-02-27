@@ -8,6 +8,7 @@ body {
     padding: 0;
     background-color: var(--background);
     display: flex;
+    flex-wrap: wrap;
 
 }
 
@@ -38,7 +39,6 @@ section {
     flex-direction: row;
     background-color: var(--in-background);
     padding: 1.6em;
-    display: fle;
 }
 
 main {
