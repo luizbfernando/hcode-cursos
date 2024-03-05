@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/index.css">
+    <title>overflow-block</title>
+</head>
+<style>
+    .container {
+        width: 200px;
+        overflow-wrap: break-word;
+        border: #000 5px solid;
+        overflow-inline: auto;
+
+    }
+
+</style>
+
+<body>
+
+    <main>
+
+        <section class="principal">
+            <h1>
+                Propriedade overflow-block
+            </h1>
+            <p><strong>Disponível apenas no firefox</strong></p>
+            <p>
+                Esta propriedade CSS irá especificar o que deve ser exibido quando o conteúdo estoura os limites
+                de um elemento de linha onde foi definida e pode ser usada na condição de uma media query
+            </p>
+            <p>
+                Esta propriedade irá direcionar para as propriedades overflow-y ou overflow-x
+                dependendo do modo de escrita do documento
+            </p>
+
+        </section>
+
+        <section class="principal-css">
+            <h2>Valores</h2>
+            <p><strong>Valores possíveis:</strong>Visible, hidden, scroll, auto, inherit, initial, unset</p>
+            <p><strong>Valor Padrão:</strong>auto</p>
+            <p><strong>Valor Herdado:</strong>não</p>
+        </section>
+
+
+        <section class="principal-teste">
+            <div class="container">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Quod cum beatae deserunt dicta provident delenitialiquam praesentiumdoloremque in ullam iste dolore
+                    eum quaerat ea odio, omnis exercitationem, at repellat?</p>
+                    eum quaerat ea odio, omnis exercitationem, at repellat?</p>
+                    eum quaerat ea odio, omnis exercitationem, at repellat?</p>
+                    eum quaerat ea odio, omnis exercitationem, at repellat?</p>
+                    eum quaerat ea odio, omnis exercitationem, at repellat?</p>
+            </div>
+        </section>
+
+    </main>
+
+</body>
+
+</html>
