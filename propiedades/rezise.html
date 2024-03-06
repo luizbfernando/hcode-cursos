@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <title>overflow-block</title>
+</head>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .content {
+        width: 50vw;
+    }
+    .item {
+        resize: both;
+        overflow: auto;
+    }
+</style>
+
+</style>
+
+<body>
+
+    <main>
+
+        <section class="principal">
+            <h1>
+                Propriedade overflow-block
+            </h1>
+            <p><strong>Disponível apenas no firefox</strong></p>
+            <p>
+                Esta propriedade css determina como um elemento HTML que possua essa propriedade poderá ser
+                redimensionado pelo usuário
+            </p>
+            <p>
+                Esta propriedade irá direcionar para as propriedades overflow-y ou overflow-x
+                dependendo do modo de escrita do documento
+            </p>
+
+        </section>
+
+        <section class="principal-css">
+            <h2>Valores</h2>
+            <p><strong>Valores possíveis:</strong>None, both, horizontal, vertical, block, inline, initial, inherit,
+                unset</p>
+            <p><strong>Valor Padrão:</strong>none</p>
+            <p><strong>Valor Herdado:</strong>não</p>
+        </section>
+
+
+        <section class="principal-teste">
+            <div class="content">
+                <p class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio laboriosam, cumque fugiat
+                    non veritatis nobis vel dicta vero aliquam eius atque accusamus nulla assumenda blanditiis?
+                    Assumenda error ipsam molestiae odio!</p>
+                <p class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro ullam architecto, eum
+                    atque iure dignissimos nisi in impedit dolorum sint rerum accusantium earum officia blanditiis
+                    saepe, itaque quas. Nisi, quibusdam.</p>
+            </div>
+
+            <form action="">
+
+                <textarea name="" id="" cols="30" rows="10"></textarea>
+
+            </form>
+
+        </section>
+
+    </main>
+
+</body>
+
+</html>
