@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/index.css">
+    <title>flex-flow</title>
+</head>
+<style>
+    .container {
+        display: flex;
+        width: 90%;
+        height: 90vh;
+        box-shadow: 0 0 10px rgb(100,100,100,.2);
+        flex-flow: column wrap;
+    }
+    .container > div {
+        /* O flex tem mais importância que o width, então ele se auto ajusta.
+        Para evitar isso, use o wrap (quebra de linha) */
+        width: 100px;
+        height: 100px;
+        border-width: .5px;
+        border-style: solid;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .container > div:hover {
+        color: #fdcb6e;
+        font-weight: bold;
+    }
+</style>
+<body>
+ 
+    <main>
+
+            <section class="principal">
+                <h1>
+                    Propriedade flow
+                </h1>
+                <p>
+                    Esta propiedade CSS define o fluxo dos itens flexíveis
+                </p>
+                <p>
+                    É uma forma abreviada das propiedades flex-direction e flex-wrap
+                </p>
+            </section>
+
+            <section class="principal-css">
+                <h2>Valores</h2>
+                <p><strong>Valores possíveis:</strong> flex-direction, flex-wrap, initial, inherit
+                unset</p>
+                <p><strong>Valor Padrão:</strong>row nowrap</p>
+                <p><strong>Valor Herdado:</strong>não</p>
+            </section>
+
+
+            <section class="principal-teste">
+               <div class="container">
+                <div>A</div>
+                <div>B</div>
+                <div>C</div>
+                <div>D</div>
+                <div>E</div>
+                <div>A</div>
+                <div>B</div>
+                <div>C</div>
+                <div>D</div>
+                <div>E</div>
+               </div>
+            </section>
+
+    </main>
+
+</body>
+
+</html>
