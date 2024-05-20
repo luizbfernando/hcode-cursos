@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/tags.css">
+    <title>Border-image</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .bloco {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .item {
+            width: 500px;
+            height: 500px;
+            background-color: #fdc571;
+            border: 1px solid #fdc571 ;
+            border-image: url(/assets/images/border-image-source.png) 100 / 50 / 100 round;
+            
+        }
+
+        strong {
+            padding-right: 3px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+
+        <section class="principal">
+            <h1>
+                Propiedade border-image
+            </h1>
+            <p>
+                Define uma imagem como a borda ao redor do elemento   
+            </p>
+            <p>Esta propiedade é uma forma abreviada das propiedades border-image-source, 
+                border-image-width, border-image-slice, border-image-outset, border-image-repeat.
+            </p>
+
+        </section>
+
+    </header>
+
+    <hr>
+
+    <main>
+
+        <section class="principal-css">
+            <h2>Valores</h2>
+            <p><strong>Valores possíveis:</strong>source slice, width, outset repeat, initial e inherit</p>
+            <p><strong>Valor Padrão:</strong>None 100% 1 0 stretch</p>
+            <p><strong>Valor Herdado:</strong>não</p>
+        </section>
+
+        <hr>
+
+        <section class="principal-teste">
+            <div class="bloco">
+                <div class="item">
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+</body>
+
+</html>  

@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/index.css">
+    <title>Display</title>
+</head>
+<style>
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container {
+        margin-top: 30px;
+        max-width: 50vw
+    }
+
+    h2 {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: #ff760c;
+    }
+
+    .block {
+        display: block;
+    }
+
+    .inline {
+        display: inline;
+    }
+
+    .inline-block {
+        display: inline-block;
+        width: 60px;
+    }
+
+    .contents {
+        display: contents;
+        background-color: #333;
+    }
+
+    .flex {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .inline-flex {
+        display: inline-flex;
+    }
+
+    .grid {
+        display: grid;
+    }
+
+    .inline-grid {
+        display: inline-grid;
+    }
+
+    .list-item {
+        display: list-item;
+    }
+
+    .table {
+        display: table;
+    }
+    .linha {
+        display: table-row;
+    }
+    .celula {
+        display: table-cell;
+    }
+    .none {
+        display: none;
+    }
+</style>
+
+</style>
+
+<body>
+
+    <main>
+
+        <section class="principal">
+            <h1>
+                Propriedade display.
+            </h1>
+
+            <p>
+                Esta propriedade CSS define o comportamento de exibição de um elemento.
+            </p>
+            <p><strong>Valores:</strong>inline, block, inline-block, contents, flex, inline-flex, grid, inline-grid,
+                list-item,
+                run-in, none, table, inline-table, table-caption, table-column-group, table-header-group,
+                table-footer-group,
+                table-cell, table-column, table-row, initial, inherit</p>
+
+
+        </section>
+
+        <section class="principal-css">
+            <h2>Valores</h2>
+            <p><strong>Valores possíveis:</strong>value, initial e inherit</p>
+            <p><strong>Valor Padrão:</strong>Depende do elemento</p>
+            <p><strong>Valor Herdado:</strong>não</p>
+        </section>
+
+
+        <section class="principal-teste">
+            <div class="container">
+
+                <h2>Display: inline-grid</h2>
+
+                <div class="inline-grid">
+                    Hcode
+                </div>
+
+                <span class="inline-grid">Hcode</span>
+                <span class="inline-gird">Hcode</span>
+                <span class="inline-grid">Hcode</span>
+
+            </div>
+            <div class="container">
+
+                <h2>Display: block</h2>
+
+                <div class="block">
+                    Hcode
+                </div>
+
+                <span class="block">Hcode</span>
+                <span class="block">Hcode</span>
+                <span class="block">Hcode</span>
+
+            </div>
+
+            <div class="container">
+
+                <h2>Display: inline</h2>
+
+                <div class="inline">
+                    Hcode
+                </div>
+
+                <span class="inline">Hcode</span>
+                <span class="inline">Hcode</span>
+                <span class="inline">Hcode</span>
+
+            </div>
+            <div class="container">
+
+                <h2>Display: inline-block</h2>
+
+                <div class="inline-block">
+                    Hcode
+                </div>
+
+                <span class="inline-block">Hcode</span>
+                <span class="inline-block">Hcode</span>
+                <span class="inline-block">Hcode</span>
+
+            </div>
+            <div class="container">
+
+                <h2>Display: contents</h2>
+
+                <div class="contents">
+                    Hcode
+                </div>
+
+                <span class="contents">Hcode</span>
+                <span class="contents">Hcode</span>
+                <span class="contents">Hcode</span>
+
+            </div>
+            <div class="container">
+
+                <h2>Display: flex</h2>
+
+                <div class="flex">
+                    Hcode
+                </div>
+
+                <span class="flex">Hcode</span>
+                <span class="flex">Hcode</span>
+                <span class="flex">Hcode</span>
+
+            </div>
+            <div class="container">
+
+                <h2>Display: inline-flex</h2>
+
+                <div class="inline-flex">
+                    Hcode
+                </div>
+
+                <span class="inline-flex">Hcode</span>
+                <span class="inline-flex">Hcode</span>
+                <span class="-inlineflex">Hcode</span>
+
+            </div>
+            <div class="container">
+
+                <h2>Display: inline-grid</h2>
+
+                <div class="inline-grid">
+                    Hcode
+                </div>
+
+                <span class="inline-grid">Hcode</span>
+                <span class="inline-gird">Hcode</span>
+                <span class="inline-grid">Hcode</span>
+
+            </div>
+            <div class="container">
+
+                <h2>Display: list-item</h2>
+
+                <div class="list-item">
+                    Hcode
+                </div>
+
+                <span class="list-item">Hcode</span>
+                <span class="list-item">Hcode</span>
+                <span class="list-item">Hcode</span>
+
+            </div>
+        
+            <div class="container">
+                <!-- Cuidado com o peso semântico!! -->
+
+                <h2>Display: table</h2>
+
+                <div class="table">
+                    Hcode
+                </div>
+
+                <div class="tabela">
+                    <div class="linha">
+                        <div class="celula">Nome</div>
+                        <div class="celula">E-mail</div>
+                        <div class="celula">Idade</div>
+                    </div>
+                </div>
+
+            </div>
+                <div class="none">
+                    <div class="linha">
+                        <div class="celula">Nome</div>
+                        <div class="celula">E-mail</div>
+                        <div class="celula">Idade</div>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</body>
+
+</html>

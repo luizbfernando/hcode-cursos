@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/tags.css">
+    <title>Combinadores de seletores</title>
+    <style>
+        form ~ input {
+            border: red 2px solid;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+
+        <div class="principal">
+            <h1>
+                Combinadores de Seletores
+            </h1>
+        </div>
+
+    </header>
+
+    <hr>
+
+    <main>
+
+        <div class="principal-css">
+            <h2>Combinador Descendente</h2>
+            <code>form input {
+                color: blue;}</code>
+            <p>Combina com o espaço entre os seletores
+                o css do seletor pai irá ser aplicado também
+                ao seletor filho
+            </p>
+
+            <h2>Combinador Filho direto</h2>
+            <code>
+                    form > input {
+                    color : blue;}
+                </code>
+            <p>
+                O estilo css será aplicado somente se o segundo seletor
+                for um filho direto do primeiro seletor.
+            </p>
+
+            <h2>Combinador Irmão Adjacente</h2>
+            <code>
+                form + div {
+                    color : blue;
+                }
+            </code>
+            <p>Irá aplicar o css apenas na div que for a 
+                irmã mais próxima e após a tag form.
+            </p>
+
+            <h2>Combinador Irmão geral</h2>
+            <code>
+                form ~ div {
+                    color : blue;
+                }
+            </code>
+            <p>Todas as divs quem estiverem
+                logo após a tag form, terão a 
+                cor azul
+            </p>
+        </div>
+
+        <hr>
+
+        <div class="principal-teste">
+
+            <form action="">
+                <input type="text" placeholder="Nome">
+
+                <label for="email">
+                    <input type="text" placeholder="email" id="email">
+                </label>
+            </form>
+
+            <input type="text" placeholder="senha">
+            <input type="text" placeholder="endereço">
+            <input type="text" placeholder="País">
+
+        </div>
+
+    </main>
+
+</body>
+
+</html>

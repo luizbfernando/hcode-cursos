@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/index.css">
+    <title>Overflow-x</title>
+</head>
+<style>
+    .container {
+        width: 300px;
+        display: flex;
+        height: auto;
+        overflow: auto;
+        flex-direction: column;
+        height: 200px;
+
+    }
+
+    .item {
+        padding: 50px;
+        margin-right: 20px;
+        border: #ff760c 5px outset;
+    }
+</style>
+<body>
+
+    <main>
+
+            <section class="principal">
+                <h1>
+                    Propriedade overflow-x
+                </h1>
+                <p>
+                    Esta propriedade CSS especifica se o conteúdo deve ser cortado, adicionado uma barra de
+                    rolagem ou exibir o conteúdo do estouro de um elemento de nível de bloco
+                    quando este estoura as bordas laterais.
+                </p>
+            </section>
+
+            <section class="principal-css">
+                <h2>Valores</h2>
+                <p><strong>Valores possíveis:</strong>visible, hidden, scroll, auto, initial, inherit, unset</p>
+                <p><strong>Valor Padrão:</strong>visible</p>
+                <p><strong>Valor Herdado:</strong>não</p>
+            </section>
+
+
+            <section class="principal-teste">
+               <div class="container">
+                    <div class="item">Curso completo de Css3</div>
+                    <div class="item">Curso completo de javaScript</div>
+                    <div class="item">Curso completo de HTML5</div>
+                    <div class="item">Curso completo de PHP 8</div>
+                    <div class="item">Curso completo de MySql</div>
+               </div>
+            </section>
+
+    </main>
+
+</body>
+
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/tags.css">
+    <title>Width</title>
+    <style>
+        .fundo {
+            width: 100vw;
+            height: 100vh;
+        }
+
+        .fundo > div[class^=largura]  /*Escolha toda classe filha direta de fundo
+         cujo nome começe com "largura" */{
+            border-style: solid;
+            border-width: 2px;
+            margin-bottom: 2%;
+            height: 40px;
+        }
+
+        .largura-auto {
+            width: auto;
+            border-color: red ;
+        }
+
+        .largura-vwvh {
+            width: 50vh;
+            border-color: #008d44aa;
+        }
+
+        .largura-percent {
+            width: 50%;
+            border-color:#EB6767aa;
+        }
+
+        .largura-pixel {
+            width: 350px;
+            border-color:#c82aaeaa;
+        }
+
+        .largura-fit {
+            width: fit-content;
+            border-color:#c2f01caa;
+        }
+
+        .largura-min {
+            width: min-content;
+            border-color: #2ac3c8aa;
+        }
+
+        .largura-max{
+            width: max-content;
+            border: color #7c2ac8aa;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+
+        <section class="principal">
+            <h1>
+                Propiedade with
+            </h1>
+            <p>
+                Define a largura dos elementos, o que não incluí as margens, bordas e espaçamento.
+            </p>
+            <p><strong>Obs:</strong>As propiedades max-width e min-width quando presentes,
+                sobrescrevem a propiedade width
+            </p>
+
+        </section>
+
+    </header>
+
+    <hr>
+
+    <main>
+
+        <section class="principal-css">
+            <h2>Valores</h2>
+            <p><strong>Valores possíveis:</strong>auto, length, initial, inherit, fit-content, max-content,
+                unset, min-content e revert</p>
+            <p><strong>Valor padrão:</strong>auto</p>
+            <p><strong>Valor Herdado:</strong>não</p>
+        </section>
+
+        <hr>
+
+        <section class="principal-teste">
+
+            <div class="fundo"></div>
+
+            <div class="largura-auto">
+                AUTO: ipsum dolor, sit amet consectetur adipisicing elit. Et deleniti doloribus nulla,
+                qui repellendus, maxime quaerat tempore assumenda optio eos accusamus ea, laudantium veniam.
+                Voluptatibus tenetur maiores aperiam quasi totam.
+            </div>
+
+            <div class="largura-vwvh">
+                VWVH: ipsum dolor, sit amet consectetur adipisicing elit. Et deleniti doloribus nulla,
+                qui repellendus, maxime quaerat tempore assumenda optio eos accusamus ea, laudantium veniam.
+                Voluptatibus tenetur maiores aperiam quasi totam.
+            </div>
+
+            <div class="largura-percent">
+                Percent: ipsum dolor, sit amet consectetur adipisicing elit. Et deleniti doloribus nulla,
+                qui repellendus, maxime quaerat tempore assumenda optio eos accusamus ea, laudantium veniam.
+                Voluptatibus tenetur maiores aperiam quasi totam.
+            </div>
+
+            <div class="largura-pixel">
+                Pixel: ipsum dolor, sit amet consectetur adipisicing elit.
+            </div>
+
+            <div class="largura-max">
+                MAx: ipsum dolor, sit amet consectetur adipisicing elit.
+            </div>
+
+            <div class="largura-min">
+                MIn: ipsum dolor, sit amet consectetur adipisicing elit.
+            </div>
+
+        </section>
+
+    </main>
+
+</body>
+
+</html>

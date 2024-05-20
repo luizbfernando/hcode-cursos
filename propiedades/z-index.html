@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/index.css">
+    <title>z-index</title>
+</head>
+<style>
+    div {
+        width: 250px;
+        height: 250px;
+    }
+   .fundo{
+    background-color: #487eb0;
+    position: relative;
+    z-index: 1;
+   }
+   .destaque {
+    background-color: #95a5a6;
+    position: absolute;
+    left: 100px;
+    top: 50px;
+    z-index: 0;
+   }
+</style>
+
+</style>
+
+<body>
+
+    <main>
+
+        <section class="principal">
+            <h1>
+                Propriedade overflow-block
+            </h1>
+            <p><strong>Disponível apenas no firefox</strong></p>
+            <p>
+                Esta propiedade CSS define a ordem de pilha de um elemento. O elemento com maior ordem
+                na pilha está sempre na frente de um elemento na ordem duma pilha menor
+            </p>
+
+
+        </section>
+
+        <section class="principal-css">
+            <h2>Valores</h2>
+            <p><strong>Valores possíveis:</strong>auto, number, initial, inherit, unset</p>
+            <p><strong>Valor Padrão:</strong>auto</p>
+            <p><strong>Valor Herdado:</strong>none</p>
+        </section>
+
+
+        <section class="principal-teste">
+
+            <div class="fundo"></div>
+            <div class="destaque"></div>
+        </section>
+
+    </main>
+
+</body>
+
+</html>

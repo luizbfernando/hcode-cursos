@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/tags.css">
+    <title>Erros comuns do Css3</title>
+</head>
+
+<body>
+
+    <header>
+
+        <div class="principal">
+            <h1>
+                Tome muito cuidado ao desenvolver um arquivo css, há muitos Erros
+                que podem ser cometidos e que comprometem totalmente o uso do arquivo.
+                Veja agora os erros mais comums de se cometer.
+            </h1>
+        </div>
+
+    </header>
+
+    <hr>
+
+    <main>
+
+        <div class="principal-css">
+            <h2>Erro de sintaxe</h2>
+            <p>Escrever errado, como faltar ou adicionar letras ao nome do
+                arquivo ou tag fará com que ele não seja carregado. (O css é
+                case sensitive)
+            </p>
+
+            <h2>Diretório Incorreto</h2>
+            <p>
+                Sempre que for mudar seu arquivo de pasta, certifique-se
+                de mudar também o diretório do link associado a tag 'link'
+            </p>
+
+            <h2>Seletores e Parentela</h2>
+            <p>Os seletores devem estar escritos corretamente, e a parentela
+                também como por exemplo:
+                <code>.body .main {
+                    background color: black;
+                }
+                </code>
+                Este código funcionará somente quando a classe .main estiver
+                dentro da tag com a classe .body sendo a tag .body, a "mãe";
+                <br>
+                .body > .main = Aplique somente quando a classe .main for
+                descendente direto da classe .body
+
+            <h2>
+                Especifidade
+            </h2>
+            <p>
+                Quanto mais específico for a declaração, mais importância
+                ela terá. Em caso de não conseguir encontrar o conflito de
+                especifidade, use o infíxo !important (sempre evite usar), exemplo :
+                <br>
+                <code>
+                    .body .main {
+                        background-color: black;
+                    }
+
+                    <br>
+
+                    .main {
+                        background-color: red!important;
+                    }
+                </code>
+            </p>
+
+            </p>
+        </div>
+
+        <hr>
+
+        <div class="principal-teste">
+
+        </div>
+
+    </main>
+
+
+</body>
+
+</html>

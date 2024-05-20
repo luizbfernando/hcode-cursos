@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/tags.css">
+    <title>Border-color</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .bloco {
+            margin: 0;
+            padding-left: 50px;
+            width: 100vh;
+            height: 100vh;
+            border-width: 5vh;
+            border-style: solid;
+            border-color: yellow;
+        }
+
+        /* Para se referir a um border-color específico mantendo a abreviação,
+            se usa: border-color: 10px 20px 18px 30px; ou seja top, right, bottom e left*/
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+
+        <section class="principal">
+            <h1>
+                Propiedade border-color
+            </h1>
+            <p>
+                Define a cor da borda de um elemento.
+            </p>
+            <p>O border-color é uma abreviação das propiedades border-top-color, border-right-color
+                , border-bottom-color
+                e border-left-color.
+            </p>
+        </section>
+
+    </header>
+
+    <hr>
+
+    <main>
+
+        <section class="principal-css">
+            <h2>Valores</h2>
+            <p><strong>Valores possíveis:</strong>color, transparent initial, inherit.</p>
+            <p><strong>Valor Padrão:</strong>A cor atual do texto do elemento</p>
+            <p><strong>Valor Herdado:</strong>não</p>
+        </section>
+
+        <hr>
+
+        <section class="principal-teste">
+            <div class="bloco">
+                <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, pariatur. Molestias
+                    recusandae atque id accusamus earum, nisi ipsa a voluptatibus tenetur, minus, dolore non aut fugiat!
+                    Ullam nam architecto illum.</div>
+            </div>
+        </section>
+
+    </main>
+
+</body>
+
+</html>
