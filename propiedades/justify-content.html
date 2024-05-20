@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/assets/css/index.css">
-    <title>flex-flow</title>
+    <title>justify-content</title>
 </head>
 <style>
     .container {
@@ -13,7 +13,11 @@
         width: 90%;
         height: 90vh;
         box-shadow: 0 0 10px rgb(100,100,100,.2);
-        flex-flow: column wrap;
+        flex-flow: row wrap;
+        /* justify-content: space-between; cola os elementos nos cantos*/
+        /* justify-content: space-around; dá espaço entre todos os elementos de todos os lados */
+        justify-content: space-evenly; 
+        /* space-evenly faz uma distribuição igualitária entre o espaçamento */
     }
     .container > div {
         /* O flex tem mais importância que o width, então ele se auto ajusta.
@@ -38,21 +42,20 @@
 
             <section class="principal">
                 <h1>
-                    Propriedade flow
+                    Propriedade justify-content
                 </h1>
                 <p>
-                    Esta propiedade CSS define o fluxo dos itens flexíveis
+                    Esta propiedade CSS define o alinhamento dos itens flexíveis no 
+                    eixo principal
                 </p>
-                <p>
-                    É uma forma abreviada das propiedades flex-direction e flex-wrap
-                </p>
+               
             </section>
 
             <section class="principal-css">
                 <h2>Valores</h2>
-                <p><strong>Valores possíveis:</strong> flex-direction, flex-wrap, initial, inherit
-                unset</p>
-                <p><strong>Valor Padrão:</strong>row nowrap</p>
+                <p><strong>Valores possíveis:</strong>flex-start, flex-end, center, space-between,
+                space-around, space-evenly, initial, inherit, unset</p>
+                <p><strong>Valor Padrão:</strong>flex-start</p>
                 <p><strong>Valor Herdado:</strong>não</p>
             </section>
 
@@ -62,13 +65,7 @@
                 <div>A</div>
                 <div>B</div>
                 <div>C</div>
-                <div>D</div>
-                <div>E</div>
-                <div>A</div>
-                <div>B</div>
-                <div>C</div>
-                <div>D</div>
-                <div>E</div>
+        
                </div>
             </section>
 
