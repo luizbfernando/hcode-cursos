@@ -8,22 +8,20 @@
     <title>align-items</title>
 </head>
 <style>
-  .container-flex {
-    display: flex;
-    width: 100vw;
-    height: 100vh;
   
     /* align-items: baseline; tamanho mínimo*/
     /* align-items: strech; tamanho máximo*/
-    
-  }
 
   .container {
-    display: grid;
+    display: flex;
     width: 100vw;
     height: 100vh;
     background-color: yellow;
     place-content: space-between center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    place-content: center;
 
   }
 
@@ -56,7 +54,7 @@
             <section class="principal-css">
                 <h2>Valores</h2>
                 <p><strong>Valores possíveis:</strong>normal, strech, center, start, end
-                flex-start, self-start, self-end, baseline, first baseline, last baseline
+                flex-start, flex-end, self-start, self-end, baseline, first baseline, last baseline
                 safe center, unsafe center, initial, inherit, unset</p>
                 <p><strong>Valor Padrão:</strong>normal</p>
                 <p><strong>Valor Herdado:</strong>não</p>

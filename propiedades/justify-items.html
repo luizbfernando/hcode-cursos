@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/index.css">
+    <title>justify-items</title>
+</head>
+<style>
+    .container {
+        display: flex;
+        width: 90%;
+        height: 90vh;
+        box-shadow: 0 0 10px rgb(100,100,100,.2);
+        flex-flow: row wrap;
+        /* justify-content: space-between; cola os elementos nos cantos*/
+        /* justify-content: space-around; dá espaço entre todos os elementos de todos os lados */
+        justify-content: space-evenly; 
+        /* space-evenly faz uma distribuição igualitária entre o espaçamento */
+    }
+    .container > div {
+        /* O flex tem mais importância que o width, então ele se auto ajusta.
+        Para evitar isso, use o wrap (quebra de linha) */
+        width: 100px;
+        height: 100px;
+        border-width: .5px;
+        border-style: solid;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .container > div:hover {
+        color: #fdcb6e;
+        font-weight: bold;
+    }
+</style>
+<body>
+ 
+    <main>
+
+            <section class="principal">
+                <h1>
+                    Propriedade justify-items
+                </h1>
+                <p>
+                    Esta propiedade CSS é usada em containers grid e alinham
+                    os items de suas áreas de grade no eixo embutido.
+                </p>
+                <p>
+                    É o equivalente a definir a propiedade <strong>justify-self</strong> em cada
+                    um dos elementos filhos.
+                </p>
+               
+            </section>
+
+            <section class="principal-css">
+                <h2>Valores</h2>
+                <p><strong>Valores possíveis:</strong>legacy, auto, 
+                normal, strech, center, start, end, 
+                flex-start, flex-end, self-start, self-end, center, space-between,
+                space-around, space-evenly, lastinitial, inherit, unset</p>
+                <p><strong>Valor Padrão:</strong>normal</p>
+                <p><strong>Valor Herdado:</strong>não</p>
+            </section>
+
+
+            <section class="principal-teste">
+               <div class="container">
+                <div>A</div>
+                <div>B</div>
+                <div>C</div>
+        
+               </div>
+            </section>
+
+    </main>
+
+</body>
+
+</html>
