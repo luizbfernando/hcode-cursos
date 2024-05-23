@@ -8,32 +8,15 @@
     <title>justify-items</title>
 </head>
 <style>
-    .container {
-        display: flex;
-        width: 90%;
-        height: 90vh;
-        box-shadow: 0 0 10px rgb(100,100,100,.2);
-        flex-flow: row wrap;
-        /* justify-content: space-between; cola os elementos nos cantos*/
-        /* justify-content: space-around; dá espaço entre todos os elementos de todos os lados */
-        justify-content: space-evenly; 
-        /* space-evenly faz uma distribuição igualitária entre o espaçamento */
+    body {
+        display: grid;
+        justify-items: right;
     }
-    .container > div {
-        /* O flex tem mais importância que o width, então ele se auto ajusta.
-        Para evitar isso, use o wrap (quebra de linha) */
-        width: 100px;
-        height: 100px;
-        border-width: .5px;
-        border-style: solid;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        
-    }
-    .container > div:hover {
-        color: #fdcb6e;
-        font-weight: bold;
+    div {
+        margin: 10px;
+        width: 200px;
+        height: 200px;
+        background-color: red;
     }
 </style>
 <body>
@@ -59,7 +42,10 @@
                 <h2>Valores</h2>
                 <p><strong>Valores possíveis:</strong>legacy, auto, 
                 normal, strech, center, start, end, 
-                flex-start, flex-end, self-start, self-end, center, space-between,
+                flex-start, flex-end, self-start, self-end, left, right, 
+                baseline, first-baseline, last-baseline,
+                safe-center, unsafe-center, legacy-right, legacy-left,
+                legacy center, center, space-between,
                 space-around, space-evenly, lastinitial, inherit, unset</p>
                 <p><strong>Valor Padrão:</strong>normal</p>
                 <p><strong>Valor Herdado:</strong>não</p>
@@ -67,13 +53,11 @@
 
 
             <section class="principal-teste">
-               <div class="container">
-                <div>A</div>
-                <div>B</div>
-                <div>C</div>
-        
-               </div>
+            
             </section>
+            <div>A</div>
+            <div>B</div>
+            <div>C</div>
 
     </main>
 
