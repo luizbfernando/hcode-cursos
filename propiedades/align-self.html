@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/index.css">
+    <title>align-self</title>
+</head>
+<style>
+  body {
+    margin: 0;
+    padding: 0 ;
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 100vh;
+    width: 100vw;
+  }
+
+  section > div {
+    width: 100px;
+    height: 100px;
+    background-color: #ff000066;
+    border: red 1px solid;
+  }
+
+  section > div:nth-child(2) {
+    align-self: stretch;
+    height: inherit;
+  }
+
+</style>
+<body>
+ 
+    <main>
+
+            <section class="principal">
+
+                <h1>
+                    Propriedade align-self
+                </h1>
+                <p>
+                    Esta propiedade CSS define o alinhamento de um item que
+                    está no eixo secundário dentro do contâiner flexível.
+                </p>
+               
+            </section>
+
+            <section class="principal-css">
+
+                <h2>Valores</h2>
+                <p><strong>Valores possíveis:</strong>auto, strech, center, flex-end, flex-start,
+                    baseline, initial, inherit, unset</p>
+                <p><strong>Valor Padrão:</strong>auto</p>
+                <p><strong>Valor Herdado:</strong>não</p>
+
+            </section>
+
+            <section class="principal-teste">
+              
+                <div>A</div>
+                <div>A</div>
+                <div>A</div>
+                <div>A</div>
+
+            </section>
+
+    </main>
+
+</body>
+
+</html>
