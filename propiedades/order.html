@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/index.css">
+    <title>order</title>
+</head>
+<style>
+   body {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+   }
+   .container {
+    width: 90%;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 0px 10px rgba(100, 100, 100, 100, .2);
+    margin: 20% auto;
+
+   }
+   .container > div {
+    height: 150px;
+    border: solid .5px;
+    display: flex ;
+    align-items: center;
+    justify-content: center;
+    transition: all .2s ease-in-out;
+    flex: 1 1 100px;
+   }
+   .container > div:hover {
+    border-color: #fdcb6e;
+   }
+   .container > div.a {
+    order: 3 ;
+   }
+   .container > div.b {
+
+   }
+   .container > div.c {
+
+   }
+   .container > div.d {
+
+   }
+</style>
+<body>
+ 
+    <main>
+
+            <section class="principal">
+                <h1>
+                    Propriedade order
+                </h1>
+                <p>
+                    Esta propriedade CSS define a ordem de um item flexível em relação aos outros
+                    itens flexíveis dentro do mesmo contâiner.
+                </p>
+  
+               
+            </section>
+
+            <section class="principal-css">
+                <h2>Valores</h2>
+                <p><strong>Valores possíveis:</strong>number, initial inherit, unset.</p>
+                <p><strong>Valor Padrão:</strong>0  </p>
+                <p><strong>Valor Herdado:</strong>não</p>
+            </section>
+
+
+            <section class="principal-teste">
+
+            <div class="container">
+                <div class="a">A</div>
+                <div class="b">B</div>
+                <div class="c">C</div>
+                <div class="d">D</div>
+            </div>
+                
+            </section>
+            
+
+    </main>
+
+</body>
+
+</html>
