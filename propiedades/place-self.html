@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/index.css">
+    <title>Place-self</title>
+</head>
+<style>
+    body {
+        margin: 0;
+        background-color: gray;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        height: 100vh;
+        
+    }
+
+    body > div {
+        background-color: #00ff00;
+        border: green 2px solid;
+        width: 50px;
+        height: 50px;
+        place-self: center;
+        /* Centraliza ambos, vertical e horizontal */
+    }
+    
+    body > div:nth-child(3) {
+        place-self: center;
+    }
+</style>
+
+<body>
+ 
+    <main>
+
+            <section class="principal">
+                <h1>
+                    Propriedade Place-self
+                </h1>
+                <p>
+                    Esta propiedade CSS é uma abreviação das propriedades
+                    align-self e justify-self
+                </p>
+                <p>
+                    Se o segundo valor não for informado o primeiro será usado em ambos;
+                </p>
+               
+            </section>
+
+            <section class="principal-css">
+                <h2>Valores</h2>
+                <p><strong>Valores possíveis:</strong>Auto, strech, center, flex-start, flex-end,
+                baseline, initial, inherit, unset.</p>
+                <p><strong>Valor Padrão:</strong>Auto</p>
+                <p><strong>Valor Herdado:</strong>não</p>
+            </section>
+
+
+            <section class="principal-teste">
+               <div></div>
+               <div></div>
+               <div></div>
+               <div></div>
+               <div></div>
+               <div></div>
+               <div></div>
+               <div></div>
+            </section>
+
+    </main>
+
+</body>
+
+</html>
