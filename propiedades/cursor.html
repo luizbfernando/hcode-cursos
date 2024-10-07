@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/index.css">
+    <title>Place-self</title>
+</head>
+<style>
+ body {
+    margin: 0;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(7, fr);
+    grid-gap: 10px;
+ }
+ .principal-teste > div {
+    border: #ccc, 1px, solid;
+    transition: all .2s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+ .principal-teste > div:hover {
+    border-color: #fdcb6e;
+    font-weight: bold;
+ }
+
+ .cursor-default {
+    cursor: default;
+ }
+
+ .principal-teste > .cursor-pointer {
+    cursor: pointer;
+ }
+
+ .principal-teste > .cursor-alias {
+    cursor: alias;
+ }
+
+ .principal-teste > .cursor-all-scroll {
+    cursor: all-scroll;
+ }
+
+ .principal-teste > .cursor-auto {
+    cursor: auto;
+ }
+
+ .principal-teste > .cursor-cell {
+    cursor: cell;
+ }
+
+ .principal-teste > .cursor-col-resize {
+    cursor: col-resize;
+ }
+
+ .principal-teste > .cursor-text-menu {
+    cursor: context-menu;
+ }
+
+ .principal-teste > .cursor-copy {
+    cursor: copy;
+ }  
+
+ .principal-teste > .cursor-crosshair {
+    cursor: crosshair;
+ }
+
+ .principal-teste > .cursor-e-resize {
+    cursor: e-resize;
+ }
+
+ .principal-teste > .cursor-ew-resize {
+    cursor: ew-resize;
+ }
+ .principal-teste > .cursor-nesw-resize {
+    cursor: nesw-resize;
+ }
+ .principal-teste > .cursor-nwse-resize {
+    cursor: nwse-resize;
+ }
+
+ .principal-teste > .cursor-s-resize {
+    cursor: s-resize;
+ }
+
+ .principal-teste > .cursor-n-resize {
+    cursor: n-resize;
+ }
+ .principal-teste > .cursor-ns-resize {
+    cursor: ns-resize;
+ }
+
+ .principal-teste > .cursor-se-resize {
+    cursor: se-resize;
+ }
+
+ .principal-teste > .cursor-ne-resize {
+    cursor: ne-resize;
+ }
+
+ .principal-teste > .cursor-nw-resize {
+    cursor: nw-resize;
+ }
+
+ .principal-teste > .cursor-sw-resize {
+    cursor: sw-resize;
+ }
+
+.principal-teste > .cursor-grab {
+    cursor: grab;
+}
+
+.principal-teste > .cursor-grabbing {
+    cursor: grabbing;
+}
+
+.principal-teste > .cursor-help {
+    cursor: help;
+}
+
+.principal-teste > .cursor-move {
+    cursor: move;
+}
+
+.principal-teste > .cursor-no-drop {
+    cursor: no-drop;
+}
+
+.principal-teste > .cursor-not-allowed {
+    cursor: not-allowed;
+}
+
+.principal-teste > .cursor-none {
+    cursor: none;
+}
+
+.principal-teste > .cursor-progress {
+    cursor: progress;
+}
+
+   .principal-teste > .cursor-row-resize {
+      cursor: row-resize;
+}
+
+   .principal-teste > .cursor-text {
+      cursor: text;
+}
+
+   .principal-teste > .cursor-vertical-text {
+      cursor: vertical-text;
+}
+
+   .principal-teste > .cursor-wait {
+      cursor: wait;
+}
+
+   .principal-teste > .cursor-zoom-in {
+      cursor: zoom-in;
+}
+
+   .principal-teste > .cursor-zoom-out {
+      cursor: zoom-out;
+}
+
+
+.principal-teste > .cursor-zoom-in {
+   cursor: zoom-in;
+}
+
+.principal-teste > .cursor-url {
+   cursor: url("/assets/images/volkswagen-1.svg"), wait;
+}
+</style>
+
+<body>
+
+    <main>
+
+        <section class="principal">
+            <h1>
+                Propriedade Cursor
+            </h1>
+            <p>
+                Esta propiedade CSS define o cursor do mouse que será exibido quando o mouse passar por
+                determinado elemento.
+            </p>
+
+
+        </section>
+
+        <section class="principal-css">
+            <h2>Valores</h2>
+            <p><strong>Valores possíveis:</strong>Auto, cursor-type, initial, inherit, unset</p>
+            <p><strong>Tipos de cursor:</strong>Alias, all-scroll, auto, cell, col-rezise, context-menu,
+                copy, crosshair, default, e-resize, ew-resize, grab, grabbing, help, move, n-resize, ne-resize,
+                nesw-resize, ns-resize, nw-resize, nwse-resize, no-drop, none, not-allowed, pointer, progress,
+                row-resize, s-resize, se-resize, sw-resize, text, url, vertical-text, w-resize, wait, zoom-in e 
+                zoom-out.  
+            </p>
+            <p><strong>Valor Padrão:</strong>Auto</p>
+            <p><strong>Valor Herdado:</strong>sim</p>
+        </section>
+
+
+        <section class="principal-teste">]
+            <div class="cursor-default">
+                Defult
+            </div>
+            <div class="cursor-pointer">pointer</div>
+            <div class="cursor-alias">alias</div>
+            <div class="cursor-all-scroll">all-scroll</div>
+            <div class="cursor-auto">auto</div>
+            <div class="cursor-cell">cell</div>
+            <div class="cursor-col-resize">col-resize</div>
+            <div class="cursor-context-menu">context-menu</div>
+            <div class="cursor-copy">copy</div>
+            <div class="cursor-crosshair">crosshair</div>
+            <div class="cursor-e-resize">e-resize</div>
+            <div class="cursor-ew-resize">ew-resize</div>
+            <div class="cursor-nesw-resize">nesw-resize</div>
+            <div class="cursor-s-resize">s</div>
+            <div class="cursor-w-resize">w</div>
+            <div class="cursor-n-resize">n</div>
+            <div class="cursor-ns-resize">ns</div>
+            <div class="cursor-se-resize">se</div>
+            <div class="cursor-ne-resize">ne</div>
+            <div class="cursor-nw-resize">nw</div>
+            <div class="cursor-sw-resize">sw</div>
+            <div class="cursor-grab">grab</div>
+            <div class="cursor-grabbing">grabbing</div>
+            <div class="cursor-help">help</div>
+            <div class="cursor-move">move</div>
+            <div class="cursor-no-drop">no-drop</div>
+            <div class="cursor-none">none</div>
+            <div class="cursor-not-allowed">not-alowed</div>
+            <div class="cursor-progress">Progress</div>
+            <div class="cursor-row-resize">row-resize</div>
+            <div class="cursor-text">text</div>
+            <div class="cursor-vertical-text">vertical-text</div>
+            <div class="cursor-wait">wait</div>
+            <div class="cursor-zoom-in">zoom-in</div>
+            <div class="cursor-zoom-out">zoom-out</div>
+            <div class="cursor-url">url(personalizado)</div>
+        </section>
+
+    </main>
+
+</body>
+
+</html>
