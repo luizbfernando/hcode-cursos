@@ -16,7 +16,7 @@ section {
     padding: 5%;
     text-align: center;
     margin: 1%;
-    height: 20em;
+    min-height: 20em;
     width: min-content;
     display: flex;
     justify-content: center;
