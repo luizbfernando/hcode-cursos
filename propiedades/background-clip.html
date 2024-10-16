@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/index.css">
+    <title>Background-clip</title>
+</head>
+    
+<style>
+    .principal-teste > p {
+        margin: 10px;
+        padding: 20px;
+        background: url('/assets/images/hcode-treinamentos.svg');
+        border: black 20px dotted;
+    }
+
+    .border-box {
+        background-clip: border-box;
+    }
+    .padding-box {
+        background-clip: padding-box;
+    }
+</style>
+
+<body>
+
+    <main>
+
+        <section class="principal">
+            <div class="content">
+                <h1>
+                    Propriedade Background-clip
+                </h1>
+                <p>
+                    Esta propriedade CSS define até que ponto o plano de fundo deve se estender dentro 
+                    de um elemento
+                </p>
+            </div>
+        </section>
+
+        <section class="principal-css">
+            <div class="content">
+                <h2>Valores</h2>
+                <p><strong>Valores possíveis:</strong>border-box, padding-box, content-box, initial,
+                inherit e unset </p>
+                <p><strong>Valor Padrão:</strong>border-box</p>
+                <p><strong>Valor Herdado:</strong>não</p>
+            </div>
+        </section>
+
+
+            <section class="principal-teste">
+                <p class="border-box">hcode.com</p>
+                <p class="padding-box">hcode.com</p>
+                <p>hcode.com</p>
+                <p>hcode.com</p>
+            </section>
+
+
+    </main>
+
+</body>
+
+</html>

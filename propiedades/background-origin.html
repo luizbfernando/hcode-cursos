@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/index.css">
+    <title>Background-origin</title>
+</head>
+    
+<style>
+
+     div {
+        width: fit-content;
+        background: url("/assets/images/hcode-treinamentos.svg");
+        background-position: center;
+        background-size: cover;
+        display: flex;
+        font-size: 50px;
+        border: black 20px dotted;
+        font-weight: bold;
+    }
+
+     .border-box {
+        background-origin: border-box;
+    }
+
+    .padding-box {
+        background-origin: border-box;
+    }
+
+ .content-box {
+        background-origin: border-box;
+    }
+
+</style>
+
+<body>
+
+    <main>
+
+        <section class="principal">
+            <div class="content">
+                <h1>
+                    Propriedade Background-origin
+                </h1>
+                <p>
+                    Esta propriedade CSS define a posição da imagem de plano de fundo
+                </p>
+            </div>
+        </section>
+
+        <section class="principal-css">
+            <div class="content">
+                <h2>Valores</h2>
+                <p><strong>Valores possíveis:</strong>border-box, padding-box, content-box, initial,
+                inherit e unset </p>
+                <p><strong>Valor Padrão:</strong>padding-box</p>
+                <p><strong>Valor Herdado:</strong>não</p>
+            </div>
+        </section>
+
+
+
+                <p class="border-box">hcode.com</p>
+                <p class="padding-box">hcode.com</p>
+                <p class="content-box">hcode.com</p>
+
+
+
+    </main>
+
+</body>
+
+</html>
