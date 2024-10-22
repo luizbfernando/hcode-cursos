@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/index.css">
+    <title>Box-decoration-break</title>
+</head>
+
+<style>
+
+    .principal-teste{
+        padding: 0 40px;
+    }
+
+    span {
+        padding: 20px;
+        margin-left: 30px;
+        background-color: yellowgreen;
+        border-radius: 15px;
+        border-style: solid;
+        font-size: 25px;
+        line-height: 35px;
+        box-shadow: 10px 10px 10px 0px red, -10px -10px 10px 0 blue;
+        box-decoration-break: clone;
+        /* ajuda na quebra de linha quando o elemento é estilizado */
+    }
+</style>
+
+<body>
+ 
+    <main>
+
+            <section class="principal">
+                <div class="content">
+                    <h1>
+                        Propriedade box-decoration-break
+                    </h1>
+                    <p>
+                        Esta propriedade CSS define como plano de fundo, preenchimento, borda, imagem de borda,
+                        borda, sombra da caixa, margem e caminho do clipe de um elemento quando são aplicados
+                        quando a caixa do elemento é quebrada.
+                    </p>
+                </div>
+            </section>
+
+            <section class="principal-css">
+               <div class="content">
+                <h2>Valores</h2>
+                <p><strong>Valores possíveis:</strong>none, h-offset, v-offset, blur, spread, 
+                color, inset, initial e inherit</p>
+                <p><strong>Valor Padrão:</strong>none</p>
+                <p><strong>Valor Herdado:</strong>não</p>
+               </div>
+            </section>
+
+
+            <section class="principal-teste">
+
+                <span>Acesse <br> o hcode <br> class</span>
+
+            </section>
+            
+
+    </main>
+
+</body>
+
+</html>
